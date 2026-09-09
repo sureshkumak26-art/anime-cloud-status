@@ -1,7 +1,7 @@
 'use client';
 import { useEffect, useState } from 'react';
 import './admin.css';
-import { supabase } from '@/lib/supabase';
+import { supabase } from '../../lib/supabase';
 
 type Service={id:string;name:string;description:string;status:string;monitor_url:string|null;monitor_enabled:boolean;expected_status:number};
 export default function Admin(){
