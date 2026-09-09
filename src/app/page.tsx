@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import { supabase } from '@/lib/supabase';
+import { supabase } from '../lib/supabase';
 
 type Service = { id?: string; name: string; description: string; status: 'operational'|'degraded'|'outage'|'maintenance'; uptime: string; latency: string; icon: string };
 const fallback: Service[] = [
